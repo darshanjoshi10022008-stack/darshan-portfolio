@@ -198,7 +198,7 @@ export default function Navbar() {
                 className="flex items-center justify-center gap-2 w-full py-2.5 px-4 text-xs font-semibold text-white bg-blue-600 rounded-lg shadow-sm"
               >
                 <Download className="w-4 h-4" />
-                <span>Download CV ({personalInfo.cvFileName})</span>
+                <span>Download Resume ({personalInfo.cvFileName})</span>
               </a>
             </div>
           </div>
@@ -210,7 +210,7 @@ export default function Navbar() {
         <div className="fixed bottom-6 right-6 z-50 max-w-sm flex items-start gap-3 p-4 rounded-xl bg-[#0c1222] border border-blue-500/40 text-slate-100 shadow-elevated backdrop-blur-xl animate-fade-in">
           <CheckCircle2 className="w-5 h-5 text-blue-400 shrink-0 mt-0.5" />
           <div className="text-xs">
-            <p className="font-semibold text-white">CV Download Started</p>
+            <p className="font-semibold text-white">Resume Download Started</p>
             <p className="text-slate-300 mt-0.5">
               Downloading <span className="font-mono text-blue-300">{personalInfo.cvFileName}</span>.
             </p>

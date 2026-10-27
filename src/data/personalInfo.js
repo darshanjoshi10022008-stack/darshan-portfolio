@@ -8,8 +8,9 @@ export const personalInfo = {
   githubUsername: "darshanjoshi10022008-stack",
   githubUrl: "https://github.com/darshanjoshi10022008-stack",
   linkedinUrl: "https://www.linkedin.com/in/darshan-h-joshi-25369a375/",
-  cvFileName: "Darshan-Joshi-CV.pdf",
-  cvDownloadPath: "/Darshan-Joshi-CV.pdf",
+  cvFileName: "Darshan_Joshi_Professional_IT_Resume.pdf",
+  cvDownloadPath: "/Darshan_Joshi_Professional_IT_Resume.pdf",
+  resumePath: "/resume.pdf",
   availabilityStatus: "Available for Internships & Junior Roles",
   availabilityType: "Open to Remote & On-Site",
   

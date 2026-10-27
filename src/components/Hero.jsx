@@ -95,10 +95,10 @@ export default function Hero() {
                 href={personalInfo.cvDownloadPath}
                 download={personalInfo.cvFileName}
                 className="inline-flex items-center justify-center gap-2 px-4 py-3.5 text-sm font-medium text-slate-300 rounded-xl bg-slate-900/60 hover:bg-slate-800 border border-slate-800 transition-colors hover:text-white w-full sm:w-auto"
-                title="Download CV"
+                title="Download Resume PDF"
               >
                 <Download className="w-4 h-4 text-blue-400" />
-                <span>CV</span>
+                <span>Resume</span>
               </a>
             </div>
 
