@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+
+  body {
+    background-color: #090d16;
+    color: #e2e8f0;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  /* Sleek modern scrollbar */
+  ::-webkit-scrollbar {
+    width: 7px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #090d16;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #334155;
+  }
+}
+
+@layer utilities {
+  /* Subtle structural background grid */
+  .bg-grid-subtle {
+    background-size: 40px 40px;
+    background-image: 
+      linear-gradient(to right, rgba(255, 255, 255, 0.025) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.025) 1px, transparent 1px);
+  }
+
+  /* Sophisticated card panels */
+  .human-card {
+    background-color: #0d1322;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 1rem;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .human-card-interactive {
+    background-color: #0d1322;
+    border: 1px solid rgba(255, 255, 255, 0.07);
+    border-radius: 1rem;
+    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+
+  .human-card-interactive:hover {
+    background-color: #111a2e;
+    border-color: rgba(59, 130, 246, 0.3);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 32px -4px rgba(0, 0, 0, 0.5), 0 0 20px -8px rgba(59, 130, 246, 0.15);
+  }
+
+  /* Distinctive human heading gradient - restrained & legible */
+  .text-brand-gradient {
+    background: linear-gradient(135deg, #ffffff 0%, #cbd5e1 55%, #93c5fd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .text-accent-gradient {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 50%, #6366f1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
+/* Reduced motion preference for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
