@@ -94,6 +94,8 @@ export default function Hero() {
               <a
                 href={personalInfo.cvDownloadPath}
                 download={personalInfo.cvFileName}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center justify-center gap-2 px-4 py-3.5 text-sm font-medium text-slate-300 rounded-xl bg-slate-900/60 hover:bg-slate-800 border border-slate-800 transition-colors hover:text-white w-full sm:w-auto"
                 title="Download Resume PDF"
               >

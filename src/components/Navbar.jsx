@@ -131,6 +131,8 @@ export default function Navbar() {
               <a
                 href={personalInfo.cvDownloadPath}
                 download={personalInfo.cvFileName}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={handleDownloadCV}
                 className="inline-flex items-center gap-2 px-4 py-2 text-xs font-semibold text-white bg-blue-600 hover:bg-blue-500 rounded-xl shadow-sm transition-all duration-200 cursor-pointer"
               >
@@ -144,10 +146,12 @@ export default function Navbar() {
               <a
                 href={personalInfo.cvDownloadPath}
                 download={personalInfo.cvFileName}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={handleDownloadCV}
                 className="p-2 text-blue-400 bg-slate-900 border border-slate-800 rounded-lg hover:bg-slate-800"
-                aria-label="Download CV"
-                title="Download CV"
+                aria-label="Download Resume"
+                title="Download Resume"
               >
                 <Download className="w-4 h-4" />
               </a>
@@ -191,6 +195,8 @@ export default function Navbar() {
               <a
                 href={personalInfo.cvDownloadPath}
                 download={personalInfo.cvFileName}
+                target="_blank"
+                rel="noopener noreferrer"
                 onClick={(e) => {
                   handleDownloadCV(e);
                   setMobileMenuOpen(false);
